@@ -1,0 +1,60 @@
+@I can't find my keys. I don't know where ____ are.
+-it
+-them
++they
+@A: "Is he a teacher?" B: "Yes, he _____."
++is
+-'s
+-does
+@A: "_____ brush your teeth?" B: "Three times a day."
++How often do you
+-When you
+-How often are you 
+@We _____ have friends over for dinner.
+-often don't
++don't often
+-don't never
+@That's _____. It's very expensive.
++Anna's car
+-the car of Anna
+-Anna car
+@_____ summer, I get up early _____ Sunday mornings.
+-In/in
+-At/on
++In/on
+@Please, can you stop making noise? I _____ a book.
++'m reading
+-read
+-reading
+@When _____?
+-they arrived
+-did they arrived
++did they arrive
+@Does he have _____?
++any sisters
+-any sister
+-some sisters
+@What _____ tomorrow?
+-will you do
+-do you do
++are you going to do
+@_____ sugar do you want in your tea?
++How much
+-How many
+-What
+@Peter is _____ player in the team.
+-the stronger
++the strongest
+-the most strong
+@I sat _____ on the couch and watched a documentary.
+-comfortable
+-quiet
++comfortably
+@I got up and had _____ breakfast very quickly because I was late.
++_
+-the
+-a
+@_____ any water in the fridge?
++Is there
+-There is
+-Is

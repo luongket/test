@@ -1,0 +1,32 @@
+VBox {
+    -fx-background-color: #3FFFFB;
+    -fx-spacing: 20;
+    -fx-padding: 10;
+}
+HBox.hboxBut {
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+}
+
+#rdoA, #rdoB, #rdoC {
+    -fx-text-fill: #FF3AED;
+    -fx-font-size: 18;
+}
+/*#rdoA:selected, #rdoB:selected, #rdoC:selected {*/
+/*   */
+/*}*/
+
+#lblQuestion {
+    -fx-font-size: 20;
+    -fx-text-fill: #FF3312;
+}
+Button {
+    -fx-background-color: #FF0101;
+    -fx-text-fill: #FFFFFF;
+}
+Text.subject {
+    -fx-font-size: 21;
+    -fx-fill: #FF0101;
+    -fx-stroke-width: 2;
+    -fx-stroke: #FFDF09;
+}

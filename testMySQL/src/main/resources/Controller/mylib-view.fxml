@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="421.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mylibControler">
+   <children>
+      <TableView fx:id="tableWord" layoutX="17.0" layoutY="106.0" prefHeight="280.0" prefWidth="567.0" stylesheets="@mylib-style.css">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="35.333343505859375" text="ID" />
+            <TableColumn fx:id="wordCol" prefWidth="120.66665649414062" text="Words" />
+            <TableColumn fx:id="meaningCol" prefWidth="130.6666259765625" text="Meaning" />
+            <TableColumn fx:id="noteCol" prefWidth="191.33331298828125" text="Note" />
+            <TableColumn fx:id="editCol" prefWidth="90.66668701171875" text="Edit" />
+         </columns>
+      </TableView>
+      <HBox layoutX="565.0" layoutY="14.0">
+         <children>
+            <FontAwesomeIconView fill="#2600ff" glyphName="CLOSE" onMouseClicked="#switchToScene" size="25" text="" wrappingWidth="20.30954360961914" />
+         </children>
+      </HBox>
+      <Text fill="#bb00ff" layoutX="17.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ bạn học">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_LEFT" layoutX="24.0" layoutY="48.0" prefHeight="50.0" prefWidth="99.0">
+         <children>
+            <FontAwesomeIconView fill="#ff008c" glyphName="PLUS" onMouseClicked="#insertWord" size="40">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#18f200e4" glyphName="REFRESH" onMouseClicked="#refreshTable" size="40" wrappingWidth="40.952369689941406">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

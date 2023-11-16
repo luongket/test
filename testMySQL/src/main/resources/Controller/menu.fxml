@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.menuController_view">
+   <children>
+      <Button layoutX="81.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToSceneMyLib" text="Từ điển của bạn" textFill="#ed0d01">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label layoutX="155.0" layoutY="68.0" text="LADY AND GENTLEMENT" textFill="#000bff">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="81.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToSceneSearch" prefHeight="32.0" prefWidth="126.0" text="Tìm kiếm" textFill="#41072e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="397.0" layoutY="142.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Luyện tập" textFill="#ff00e9">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

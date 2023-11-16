@@ -1,0 +1,31 @@
+.text {
+    -fx-fill: #000000; /* Màu chữ của Text */
+}
+
+/* Đổi màu cho FontAwesomeIconView với glyphName "CLOSE" */
+#CLOSE {
+    -fx-fill: #00ff00; /* Màu của biểu tượng */
+}
+
+/* Đổi màu cho TextField "searchBar" */
+#searchBar {
+    -fx-text-fill: #FFFFFF; /* Màu chữ trong TextField */
+    -fx-background-color: #5B9AFF; /* Màu nền TextField */
+    -fx-prompt-text-fill: #FFFFFF;
+}
+
+/* Đổi màu cho FontAwesomeIconView "clickSave" */
+#clickSave {
+    -fx-fill: #E5FF02; /* Màu của biểu tượng */
+
+}
+
+/* Đổi màu cho ListView "listView" */
+#listView {
+    -fx-background-color: #A79DFF; /* Màu nền ListView */
+}
+
+/* Đổi màu cho WebView "definitionView" */
+#definitionView.web-view.label {
+    -fx-background-color: #000000;
+}

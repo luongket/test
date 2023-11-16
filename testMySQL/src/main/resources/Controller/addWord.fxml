@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addWordController">
+   <children>
+      <HBox prefHeight="61.0" prefWidth="336.0">
+         <children>
+            <Text fill="#ff0535f0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm từ mới">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Text>
+            <FontAwesomeIconView glyphName="CLOSE" onMouseClicked="#close" size="25" wrappingWidth="19.999999841054887">
+               <HBox.margin>
+                  <Insets left="48.0" top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+      <HBox prefHeight="53.0" prefWidth="336.0">
+         <children>
+            <Text fill="#2b00ff" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="idText" prefHeight="39.0" prefWidth="263.0">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="63.0" prefWidth="336.0">
+         <children>
+            <Text fill="#4d00ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Word">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="wordText" prefHeight="51.0" prefWidth="262.0">
+               <HBox.margin>
+                  <Insets left="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="67.0" prefWidth="336.0">
+         <children>
+            <Text fill="#1500ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Meaning">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="meaningText" prefHeight="54.0" prefWidth="263.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="68.0" prefWidth="336.0">
+         <children>
+            <Text fill="#2200ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Note">
+               <HBox.margin>
+                  <Insets right="35.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="noteText" prefHeight="58.0" prefWidth="263.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#save" text="Save">
+               <HBox.margin>
+                  <Insets left="-20.0" right="65.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clean" text="Clean">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="100.0" top="30.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
