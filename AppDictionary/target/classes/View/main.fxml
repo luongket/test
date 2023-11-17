@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mainController">
+   <children>
+      <AnchorPane fx:id="mainContent" layoutX="36.0" layoutY="42.0" prefHeight="560.0" prefWidth="840.0" />
+      <AnchorPane prefHeight="40.0" prefWidth="876.0" style="-fx-background-color: #333c26;">
+         <children>
+            <ImageView fx:id="menu" fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sliderNav" layoutX="36.0" layoutY="42.0" prefHeight="560.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="42.0" />
+      <AnchorPane layoutY="42.0" prefHeight="560.0" prefWidth="36.0" style="-fx-background-color: #3306;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="36.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <ImageView fx:id="home" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                     <image>
+                        <Image url="@../asset/home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="dictionary" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                     <image>
+                        <Image url="@../asset/dictionary.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="stadiaController" fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                     <image>
+                        <Image url="@../asset/game.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="note" fitHeight="36.0" fitWidth="36.0" layoutX="10.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                     <image>
+                        <Image url="@../asset/dictionary.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

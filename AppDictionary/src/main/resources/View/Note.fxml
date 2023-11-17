@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NoteController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="85.0" prefHeight="480.0" prefWidth="300.0">
+         <children>
+            <ListView fx:id="listView" layoutY="80.0" prefHeight="392.0" prefWidth="240.0" />
+            <TextField fx:id="searchField" layoutY="14.0" prefHeight="40.0" prefWidth="240.0" promptText="Nhập từ cần tìm kiếm" />
+            <Button fx:id="search" layoutX="255.0" layoutY="19.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="45.0" text="S" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="330.0" layoutY="82.0" prefHeight="480.0" prefWidth="510.0">
+         <children>
+            <Button fx:id="delete" layoutX="423.0" layoutY="22.0" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="edit" layoutX="345.0" layoutY="22.0" mnemonicParsing="false" text="Edit" />
+            <Button fx:id="add" layoutX="266.0" layoutY="22.0" mnemonicParsing="false" text="Add" />
+            <WebView fx:id="definitionView" layoutY="77.0" prefHeight="392.0" prefWidth="502.0" />
+            <AnchorPane fx:id="editTab" layoutX="-4.0" layoutY="3.0" prefHeight="480.0" prefWidth="510.0">
+               <children>
+                  <TextArea fx:id="editArea" layoutX="4.0" layoutY="74.0" prefHeight="392.0" prefWidth="502.0" promptText="Nhập định nghĩa mới">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="10.0" />
+                     </opaqueInsets>
+                  </TextArea>
+                  <Button fx:id="save" layoutX="338.0" layoutY="417.0" mnemonicParsing="false" text="Save" />
+                  <Button fx:id="cancel" layoutX="419.0" layoutY="417.0" mnemonicParsing="false" text="Cancel" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="80.0" prefWidth="840.0">
+         <children>
+            <Label alignment="CENTER" layoutX="111.0" layoutY="16.0" prefHeight="49.0" prefWidth="99.0" text="NOTE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addWord" layoutX="115.0" layoutY="49.0" prefHeight="488.0" prefWidth="630.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="630.0" style="-fx-background-color: #00FFFF;" text="WORD DETAIL">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="eng" layoutX="64.0" layoutY="66.0" prefHeight="40.0" prefWidth="502.0" promptText="Nhập từ" />
+            <TextArea fx:id="def" layoutX="64.0" layoutY="123.0" prefHeight="294.0" prefWidth="502.0" promptText="Nhập định nghĩa" />
+            <Button fx:id="confirm" layoutX="433.0" layoutY="431.0" mnemonicParsing="false" text="Confirm" />
+            <Button fx:id="canc" layoutX="534.0" layoutY="431.0" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

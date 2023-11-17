@@ -1,0 +1,21 @@
+.imageView:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+Button.checkYourAnswer {
+    -fx-background-color: #0B69FF;
+    -fx-text-fill: #FFFFFF;
+}
+VBox {
+    -fx-background-color: #33FFF1;
+    -fx-spacing: 5;
+    -fx-padding: 10;
+}
+HBox.But {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 20;
+}
+#rdoA,#rdoB,#rdoC {
+    -fx-text-fill: #F800FF;
+}
